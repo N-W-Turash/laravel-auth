@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
+            <div class="panel panel-default no-box-shadow">
                 <div class="panel-heading panel-heading-center-text">
                     <h2 class="base-font">Sign In</h2>
                 </div>
@@ -13,10 +13,18 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('firstname') ? ' has-error' : '' }}">
-                            <label for="firstname" class="col-md-4 control-label">First Name</label>
+                            <label for="firstname" class="col-md-4 control-label label-text">First Name</label>
 
                             <div class="col-md-6">
-                                <input id="firstname" type="text" class="form-control" name="firstname" value="{{ old('firstname') }}" required autofocus>
+                                <input
+                                    id="firstname"
+                                    type="text"
+                                    class="form-control general-text-input"
+                                    name="firstname"
+                                    value="{{ old('firstname') }}"
+                                    required
+                                    autofocus
+                                >
 
                                 @if ($errors->has('firstname'))
                                     <span class="help-block">
@@ -27,10 +35,18 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('lastname') ? ' has-error' : '' }}">
-                            <label for="lastname" class="col-md-4 control-label">Last Name</label>
+                            <label for="lastname" class="col-md-4 control-label label-text">Last Name</label>
 
                             <div class="col-md-6">
-                                <input id="lastname" type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" required autofocus>
+                                <input
+                                    id="lastname"
+                                    type="text"
+                                    class="form-control general-text-input"
+                                    name="lastname"
+                                    value="{{ old('lastname') }}"
+                                    required
+                                    autofocus
+                                >
 
                                 @if ($errors->has('lastname'))
                                     <span class="help-block">
@@ -41,10 +57,17 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                            <label for="email" class="col-md-4 control-label label-text">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                                <input
+                                    id="email"
+                                    type="email"
+                                    class="form-control general-text-input"
+                                    name="email"
+                                    value="{{ old('email') }}"
+                                    required
+                                >
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -55,10 +78,16 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+                            <label for="password" class="col-md-4 control-label label-text">Password</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
+                                <input
+                                    id="password"
+                                    type="password"
+                                    class="form-control general-text-input"
+                                    name="password"
+                                    required
+                                >
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -69,10 +98,16 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
+                            <label for="password-confirm" class="col-md-4 control-label label-text">Confirm Password</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input
+                                    id="password-confirm"
+                                    type="password"
+                                    class="form-control general-text-input"
+                                    name="password_confirmation"
+                                    required
+                                >
                             </div>
                         </div>
 

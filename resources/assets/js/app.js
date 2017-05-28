@@ -21,20 +21,3 @@ const app = new Vue({
     el: '#app'
 });
 
-$(document).ready(function(){
-
-    $('.dropdown-toggle').click(function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        $(this).dblclick();
-
-        console.log('clicked');
-
-        $(this).dropdown();
-
-        return false;
-    });
-});
-
-

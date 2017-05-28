@@ -788,23 +788,7 @@ window.Vue = __webpack_require__(38);
 Vue.component('example', __webpack_require__(35));
 
 var app = new Vue({
-    el: '#app'
-});
-
-$(document).ready(function () {
-
-    $('.dropdown-toggle').click(function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        $(this).dblclick();
-
-        console.log('clicked');
-
-        $(this).dropdown();
-
-        return false;
-    });
+  el: '#app'
 });
 
 /***/ }),

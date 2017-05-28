@@ -45,27 +45,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;<!--<li class="dropdown">
-                            <a
-                                    class="dropdown-toggle"
-                                    type="button"
-                                    id="dropdownMenu1"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="true"
-                                    onclick="$('.dropdown-toggle').dropdown()"
-                            >
-                                Dropdown
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>-->
+                        &nbsp;
                     </ul>
 
                     <!-- Right Side Of Navbar -->

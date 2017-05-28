@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
+            <div class="panel panel-default no-box-shadow">
                 <div class="panel-heading panel-heading-center-text">
                     <h2 class="base-font">Sign In</h2>
                 </div>
@@ -70,7 +70,7 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary btn-large base-font">
+                                <button type="submit" class="btn btn-primary btn-large">
                                     Login
                                 </button>
 
