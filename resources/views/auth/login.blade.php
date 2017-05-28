@@ -9,6 +9,7 @@
                     <h2 class="base-font">Sign In</h2>
                 </div>
                 <div class="panel-body">
+
                     <form class="form-horizontal auth-form" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
@@ -19,7 +20,7 @@
                                 <input
                                     id="email"
                                     type="email"
-                                    class="form-control"
+                                    class="form-control general-text-input"
                                     name="email"
                                     value="{{ old('email') }}"
                                     required autofocus
@@ -40,7 +41,7 @@
                                 <input
                                     id="password"
                                     type="password"
-                                    class="form-control"
+                                    class="form-control general-text-input"
                                     name="password"
                                     required
                                 >
@@ -56,11 +57,11 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
-                                    <label>
+                                    <label class="base-font label-text">
                                         <input
-                                                type="checkbox"
-                                                name="remember"
-                                                {{ old('remember') ? 'checked' : '' }}
+                                            type="checkbox"
+                                            name="remember"
+                                            {{ old('remember') ? 'checked' : '' }}
                                         > Remember Me
                                     </label>
                                 </div>
@@ -69,11 +70,11 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary btn-large">
+                                <button type="submit" class="btn btn-primary btn-large base-font">
                                     Login
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn btn-link base-font" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a>
                             </div>

@@ -461,3 +461,11 @@ body {
   min-width: 150px;
 }
 
+.general-text-input, .general-text-input:focus{
+  border-radius: 2px;
+  height: 45px;
+  border: 1px solid #d6d6d6;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
